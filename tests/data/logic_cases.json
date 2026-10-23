@@ -1,0 +1,21 @@
+{
+ "classify": [
+  {"id": "Q2a", "sentence": "Smoke ==> Fire", "expected": "satisfiable"},
+  {"id": "Q2b", "sentence": "((Smoke & Heat) ==> Fire) <=> ((Smoke ==> Fire) | (Heat ==> Fire))", "expected": "valid"},
+  {"id": "Q4", "sentence": "((Food ==> Party) | (Drinks ==> Party)) ==> ((Food & Drinks) ==> Party)", "expected": "valid"},
+  {"id": "extra_valid", "sentence": "Smoke ==> Smoke", "expected": "valid"},
+  {"id": "extra_unsat", "sentence": "Smoke & ~Smoke", "expected": "unsatisfiable"},
+  {"id": "extra_converse", "sentence": "(Smoke ==> Fire) ==> (~Smoke ==> ~Fire)", "expected": "satisfiable"}
+ ],
+ "models": [
+  {"id": "Q3a", "sentence": "B | C", "vocabulary": ["A", "B", "C", "D"], "expected": 12},
+  {"id": "Q3b", "sentence": "(A ==> B) & A & ~B & C & D", "vocabulary": ["A", "B", "C", "D"], "expected": 0},
+  {"id": "extra_one_model", "sentence": "A & B & C & D", "vocabulary": ["A", "B", "C", "D"], "expected": 1}
+ ],
+ "cnf": [
+  {"id": "Q4_left", "sentence": "(Food ==> Party) | (Drinks ==> Party)", "clauses": [["~Food", "~Drinks", "Party"]]},
+  {"id": "Q4_right", "sentence": "(Food & Drinks) ==> Party", "clauses": [["~Food", "~Drinks", "Party"]]},
+  {"id": "Q4_negated", "sentence": "~(((Food ==> Party) | (Drinks ==> Party)) ==> ((Food & Drinks) ==> Party))", "clauses": [["~Food", "~Drinks", "Party"], ["Food"], ["Drinks"], ["~Party"]]},
+  {"id": "distribution", "sentence": "(A & B) | C", "clauses": [["A", "C"], ["B", "C"]]}
+ ]
+}

@@ -1,0 +1,37 @@
+group,config,position,runs,most_common_move,agreement,distinct_moves,move_counts,accuracy,mean_tree_size,mean_seconds
+baseline,baseline,empty,4,3,0.5,3,1:1 3:2 5:1,,1401,0.04
+baseline,baseline,must_block,4,3,1.0,1,3:4,1.0,1140,0.029
+baseline,baseline,win_now,4,0,1.0,1,0:4,1.0,734,0.017
+baseline,baseline,midgame,4,3,1.0,1,3:4,,1390,0.035
+cycles,cycles=50,empty,4,6,0.25,4,1:1 3:1 4:1 6:1,,351,0.005
+cycles,cycles=50,must_block,4,3,0.5,3,0:1 3:2 6:1,0.5,300,0.006
+cycles,cycles=50,win_now,4,0,1.0,1,0:4,1.0,256,0.008
+cycles,cycles=50,midgame,4,2,0.5,3,2:2 3:1 6:1,,346,0.009
+cycles,cycles=1000,empty,4,3,0.5,3,1:1 3:2 5:1,,1401,0.039
+cycles,cycles=1000,must_block,4,3,1.0,1,3:4,1.0,1140,0.025
+cycles,cycles=1000,win_now,4,0,1.0,1,0:4,1.0,734,0.027
+cycles,cycles=1000,midgame,4,3,1.0,1,3:4,,1390,0.038
+width,x=2,empty,4,3,1.0,1,3:4,,364,0.036
+width,x=2,must_block,4,3,1.0,1,3:4,1.0,130,0.009
+width,x=2,win_now,4,0,1.0,1,0:4,1.0,53,0.003
+width,x=2,midgame,4,3,1.0,1,3:4,,194,0.019
+width,x=7,empty,4,3,0.5,3,1:1 3:2 5:1,,1401,0.038
+width,x=7,must_block,4,3,1.0,1,3:4,1.0,1140,0.025
+width,x=7,win_now,4,0,1.0,1,0:4,1.0,734,0.015
+width,x=7,midgame,4,3,1.0,1,3:4,,1390,0.028
+depth,depth=1,empty,4,4,0.5,2,3:2 4:2,,8,0.011
+depth,depth=1,must_block,4,3,1.0,1,3:4,1.0,8,0.006
+depth,depth=1,win_now,4,0,1.0,1,0:4,1.0,8,0.005
+depth,depth=1,midgame,4,3,0.5,3,2:1 3:2 5:1,,8,0.005
+depth,depth=42,empty,4,3,0.5,3,1:1 3:2 5:1,,1401,0.027
+depth,depth=42,must_block,4,3,1.0,1,3:4,1.0,1140,0.02
+depth,depth=42,win_now,4,0,1.0,1,0:4,1.0,734,0.016
+depth,depth=42,midgame,4,3,1.0,1,3:4,,1390,0.025
+utility,W=0,empty,4,3,0.5,3,2:1 3:2 4:1,,1401,0.03
+utility,W=0,must_block,4,3,1.0,1,3:4,1.0,1154,0.022
+utility,W=0,win_now,4,0,1.0,1,0:4,1.0,766,0.013
+utility,W=0,midgame,4,3,1.0,1,3:4,,1387,0.023
+utility,W=5,empty,4,3,0.5,3,2:1 3:2 5:1,,1401,0.018
+utility,W=5,must_block,4,3,1.0,1,3:4,1.0,1147,0.019
+utility,W=5,win_now,4,0,1.0,1,0:4,1.0,785,0.015
+utility,W=5,midgame,4,3,1.0,1,3:4,,1389,0.02

@@ -1,0 +1,10 @@
+group,config,cycles,expansion_width,max_depth,c,w_objective,expansion_order,objective_scale,seed
+baseline,baseline,200,7,42,1.414,1.0,objective,20.0,
+cycles,cycles=50,50,7,42,1.414,1.0,objective,20.0,
+cycles,cycles=1000,200,7,42,1.414,1.0,objective,20.0,
+width,x=2,200,2,42,1.414,1.0,objective,20.0,
+width,x=7,200,7,42,1.414,1.0,objective,20.0,
+depth,depth=1,200,7,1,1.414,1.0,objective,20.0,
+depth,depth=42,200,7,42,1.414,1.0,objective,20.0,
+utility,W=0,200,7,42,1.414,0.0,objective,20.0,
+utility,W=5,200,7,42,1.414,5.0,objective,20.0,
